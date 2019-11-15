@@ -1,0 +1,32 @@
+import { ElementRef, EventEmitter, Injector, OnChanges, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
+import { ILoadableRootOptions } from './loadable.config';
+import { LoadableService } from './loadable.service';
+export declare class LoadableComponent implements OnChanges {
+    private options;
+    private loadable;
+    private elementRef;
+    private injector;
+    module: string;
+    show: boolean;
+    timeout: number | undefined;
+    isElement: boolean;
+    init: EventEmitter<any>;
+    content: ViewContainerRef;
+    placeholder: ViewContainerRef;
+    loadingTemplate: TemplateRef<any>;
+    errorTemplate: TemplateRef<any>;
+    timeoutTemplate: TemplateRef<any>;
+    private moduleRef;
+    loading: boolean;
+    loaded: boolean;
+    error: boolean;
+    timedOut: boolean;
+    timeoutRef: any;
+    constructor(options: ILoadableRootOptions, loadable: LoadableService, elementRef: ElementRef, injector: Injector);
+    ngOnChanges(changes: SimpleChanges): void;
+    preload(): Promise<any>;
+    private _render;
+    reload(): void;
+    _renderTimeoutTemplate(): void;
+    loadFn(): void;
+}

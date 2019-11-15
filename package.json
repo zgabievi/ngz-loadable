@@ -1,0 +1,38 @@
+{
+  "name": "ngx-loadable",
+  "version": "2.1.0",
+  "description": "ngx-loadable: Simpler Lazy Loading Non Routable Angular Modules",
+  "keywords": [
+    "Angular",
+    "Lazy Loading",
+    "Library"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohammedzamakhan/ngx-loadable"
+  },
+  "homepage": "https://mohammedzamakhan.github.io/ngx-loadable/",
+  "schematics": "./schematics/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "8.3.6",
+    "@angular-devkit/schematics": "8.3.6",
+    "tslib": "^1.9.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">7.0.0 <9.0.0",
+    "@angular/core": ">7.0.0 <9.0.0",
+    "@angular/router": ">7.0.0 <9.0.0",
+    "rxjs": ">6.0.0"
+  },
+  "main": "bundles/ngx-loadable.umd.js",
+  "module": "fesm5/ngx-loadable.js",
+  "es2015": "fesm2015/ngx-loadable.js",
+  "esm5": "esm5/ngx-loadable.js",
+  "esm2015": "esm2015/ngx-loadable.js",
+  "fesm5": "fesm5/ngx-loadable.js",
+  "fesm2015": "fesm2015/ngx-loadable.js",
+  "typings": "ngx-loadable.d.ts",
+  "metadata": "ngx-loadable.metadata.json",
+  "sideEffects": false
+}
